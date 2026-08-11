@@ -1,0 +1,226 @@
+/*תרגיל 1*/
+/* Mobile */
+
+/* body {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 200px;
+    height: 100vh;
+    border: 1px solid black;
+    justify-self: end;
+    justify-items: end;
+    padding: 10px;
+    gap: 1px;
+    
+}
+
+.header {
+    padding: 10px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+} */
+
+/* Tablet*/
+/* 
+@media (min-width: 768px) {
+    body {
+        width: 1000px;
+        height: 80vh;
+        padding: 15px;
+
+    }
+
+    .header {
+        padding: 40px;
+        font-size: 28px;
+
+    }
+
+    p {
+        font-size: 18px;
+    }
+} */
+/*desktop*/
+/* @media (min-width: 1024px) {
+    body {
+        height: 60vh ;
+    }
+
+    .header {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+} */
+
+/*תרגיל 2*/
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mobile*/
+
+
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    gap: 10px;
+}
+
+.div1 {
+    position: relative;
+}
+
+.div{
+    width: 300px;
+    height: 200px;
+    background-color: skyblue;
+}
+
+.div1::before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-top: 2px solid black;
+}
+
+.div4 {
+    border-bottom: 2px solid black;
+} */ 
+
+/*Tablet*/
+/* @media (min-width:768px) {
+    .container {
+        display: grid;
+        width: 620px;
+        grid-template-columns: 300px 300px;
+        direction: rtl;
+        border: 2px solid black;
+        justify-self: end;
+        padding: 5px;
+}
+.div1::before{
+    display: none;
+}
+
+.div4 {
+    border-bottom: none;
+}
+} */
+/*desktop*/
+
+/* @media (min-width:1024px) {
+    .container {
+        display: grid;
+        width: 950px;
+        grid-template-columns: 300px 300px 300px;
+        }
+} */
+
+
+/*תרגיל 4*/
+
+.container {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+
+}
+
+label {
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    align-content: center;
+    background-color: black;
+    justify-content: end;
+    
+}
+
+#hambourger{
+    display: none;
+}
+
+nav label {
+    color: white;
+    
+}
+
+.links {
+    display: none;
+}
+
+#hambourger:checked ~ .links {
+    display: flex;
+}
+
+.links {
+    flex-direction: column;
+}
+
+@media (min-width:1024px) {
+   .container{
+    width: 900px;
+    height: 700px;
+    border: 1px solid black;
+    justify-self: end;
+   }
+
+   .nav label {
+    display: none;
+   }
+
+    .links {
+        display: flex;
+        justify-content: end;
+        background-color: black;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+    .links a {
+        color: blue;
+    }
+}
+
+
+
+
+
+
+/* .nav {
+
+} */
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
