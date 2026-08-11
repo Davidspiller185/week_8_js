@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+    <head >
+        <meta charset="utf8">
+        <meta name="viewreport" content="width=device-width,initial-scale=1.0">
+        <title>home page</title>
+        <link rel="stylesheet" href="styleContact.css">
+    </head>
+        <body>
+            <header class="header">
+                <nav class="navHeader">
+                    <h2 >הגינה של מיכל</h2>
+                    <div class="reference">
+                    <a class="home" href="homePage.html">בית</a>
+                    <a class="contact" href="#">צור קשר</a>
+                    <div>
+                    
+                    
+
+                </nav>
+                    
+            </header> 
+            <main>
+                <div class="h1main">
+                    <h1>נשמח לשמוע מכם</h1>
+                    <p>שאלות על טיפול בצמחים, הזמנות ומשלוחים- כל התשובות כאן</p>
+                </div>
+                <section class="section1">
+                    <h2>מגיעים אלינו</h2>
+                    <article class="article">
+                        <div class="div">
+                            <p>כתובת</p>
+                            <h3>רחוב הגפן 12</h3>
+                        </div>
+                        <div>
+                            <p>שעות פתיחה</p>
+                            <h3>א'-ה' 19:00-09:00</h3>
+                        </div>
+                        <div>
+                            <p>שישי</hp>
+                            <h3>14:00-09:00</h3>
+                        </div>
+                        <div>
+                            <p>טלפון</p>
+                            <h3>03-1234567</h3>
+                        </div>
+
+                    </article>
+                </section>
+                <section class="section2">
+                    <h2>השאירו פרטים ונחזור אליכם</h2>
+                    <p>מתלבטים איזה צמח מתאים לבית שלכם? מלאו את הפרטים ואחת המומחיות שלנו תחזור אליכם עם המלצה אישית.</p>
+                    <form action="http://localhost:3000/post" method="post">
+                        <article class="articleContact">
+                        <div class="div1">
+                        <label for="fullname">
+                            שם מלא
+                        </label>
+                        <input 
+                            type="text",
+                            id="fullname",
+                            name="fullname",
+                            placeholder="לדוגמה:מיכל כהן",
+                            required
+                        >
+                        <label for="question">
+                                איך נוכל לעזור?
+                        </label>
+                        <select id="question" name="question">
+                            <option value="general">שאלה כללית</option>
+                            <option value="technic">שאלה טכנית</option>
+                        </select>
+                        
+                        </div>
+                        <div class="div2">
+                        <label for="email">
+                            אימייל לחזרה
+                        </label>
+                        <input
+                            type="email",
+                            id="email",
+                            name="email",
+                            placeholder="you@example.com",
+                            required
+                        >
+                        <label for="tellus">
+                            ספרו לנו קצת
+                        </label>
+                        <textarea 
+                                id="tellus"
+                                name="tellus"
+                                placeholder="למשל: מחפשת צמח לפינת אוכל עם מעט אור טבעי..."
+                        ></textarea>
+
+                        </div>
+                        </article>
+                        <button type="submit">
+                            שליחת הפנייה
+                        </button>
+                           
+                    </form>
+                </section>
+                <hr>
+            </main>
+              <footer class="footer">
+                <nav class="footernav">
+                    <a class="Home" href="homePage.html">בית</a>
+                    <a class="Contact" href="#">צור קשר</a>
+                </nav>
+                <p>
+                    הגינה של מיכל- עם אהבה, מים ואור שמש
+                </p>
+            </footer>
+        </body>
+</html>
+
+                
