@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>גלריה</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 2rem;
+            background: #f0f0f0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .thumb {
+            width: 150px;
+            height: 100px;
+            border-radius: 8px;
+            background: #7B6FD0;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .thumb.selected {
+            outline: 3px solid #3ECFAE;
+        }
+
+        #preview {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            display: none;
+        }
+
+        #preview.visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="searchForm">
+        <input id="search">
+    </form>
+
+    <h2>גלריית תמונות</h2>
+
+    <p>חצים לניווט | Escape לביטול בחירה</p>
+
+    <div class="gallery" id="gallery">
+
+        <div class="thumb" data-id="1" data-name="הרים">🏔️</div>
+
+        <div class="thumb" data-id="2" data-name="ים">🌊</div>
+
+        <div class="thumb" data-id="3" data-name="יער">🌲</div>
+
+        <div class="thumb" data-id="4" data-name="שקיעה">🌅</div>
+
+        <div class="thumb" data-id="5" data-name="עיר">🌆</div>
+
+    </div>
+
+    <div id="preview">
+        <h3 id="previewName">—</h3>
+    </div>
+
+    <script src="gallery.js"></script>
+
+</body>
+</html>
